@@ -123,7 +123,6 @@ int cmd_edit(char input[100][100], int tok_num){// e[dit] address, value 명령�
 	int address;
 	int value;
 	if(tok_num != 3) {//invalid args
-		printf("check input.\n");
 		return -1;
 	}
 	

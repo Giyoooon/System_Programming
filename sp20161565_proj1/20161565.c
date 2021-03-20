@@ -84,11 +84,11 @@ int main(){
 		}
 		else if(strcmp(command,"e") == 0 || strcmp(command, "edit")==0){// e[dit] start, end
 			input_switch = cmd_edit(input_tok,par_num);
-			if(input_switch == -1){
+			if(input_switch == 1){
 				add_history(tmp_history);
 			}	
-			else if(input_switch == 1){
-				printf("\"%s\" is invalid option. Check h[elp].\n",real_input);
+			else if(input_switch == -1){
+				printf("e[dit]\"%s\" is invalid option. Check h[elp].\n",real_input);
 			}
 		}
 		else if(strcmp(command, "f") == 0 || strcmp(command, "fill") == 0){// f[ill] start, end, value
